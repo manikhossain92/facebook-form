@@ -14,15 +14,31 @@
      <p>Facebook helps you connect and share with the people in you life.</p>
     </div>
     <div class="box">
-        <form action="">
-            <input type="text" placeholder="E-mail address or phone number"><br>
-            <input type="text" placeholder="Password address"><br><br>
-            <button type="submit">Log In</button><br><br>
-            <a href="#">forgetten account ?</a><br><br>
+        <form>
+            <input type="text" placeholder="E-mail address or phone number" id="userName">
+            <small id="nameErr"></small><br>
+
+            <input type="password" placeholder="Password" id="passw">
+            <small id="passErr"></small><br>
+
+            <input type="password" placeholder=" Confirm Password" id="repass">
+<small id="conpassErr"></small><br><br>
+
+            <button type="submit" onclick="return submitt();">Log In</button><br><br>
+
+            <a href="#">forgetten account ?</a><br>
+            <div class="line"></div><br>
+
             <button type="submit" class="cna" >create new account</button>
         </form>
         <p><a href="#">Create a Page</a> for a celebrity, band or business.</p>
     </div>
     </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 </html>
